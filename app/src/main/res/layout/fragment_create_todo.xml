@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    tools:context=".ui.createTodo.CreateTodoFragment">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/usual_end_margin"
+        android:layout_marginLeft="@dimen/usual_end_margin"
+        android:layout_marginEnd="@dimen/usual_end_margin"
+        android:layout_marginRight="@dimen/usual_end_margin"
+        android:layout_marginBottom="@dimen/usual_end_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etTodoHead"
+            android:layout_width="@dimen/edit_input_text_width"
+            android:layout_height="match_parent"
+            android:hint="@string/headline" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout3"
+        android:layout_width="@dimen/match_constraints"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/usual_end_margin"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="@dimen/usual_end_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout4">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etTodoText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/todo_details" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tvDeadlineDisplay"
+        android:layout_width="@dimen/match_constraints"
+        android:layout_height="@dimen/edit_input_text_height"
+        android:layout_marginStart="@dimen/usual_end_margin"
+        android:layout_marginLeft="@dimen/usual_end_margin"
+        android:layout_marginTop="@dimen/usual_end_margin"
+        android:layout_marginEnd="@dimen/usual_end_margin"
+        android:layout_marginRight="@dimen/usual_end_margin"
+        android:layout_marginBottom="@dimen/usual_end_margin"
+        android:gravity="center"
+        android:text="@string/todo_deadline"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout3"
+        app:layout_constraintVertical_bias="0.303" />
+
+    <Button
+        android:id="@+id/btnSetDeadline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="12dp"
+        android:text="@string/set_deadline"
+        app:layout_constraintBottom_toTopOf="@+id/tvDeadlineDisplay"
+        app:layout_constraintEnd_toEndOf="@+id/tvDeadlineDisplay"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/tvDeadlineDisplay"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout3"
+        app:layout_constraintVertical_bias="0.72" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout5"
+        android:layout_width="@dimen/match_constraints"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/usual_end_margin"
+        android:layout_marginTop="@dimen/usual_end_margin"
+        android:layout_marginBottom="@dimen/usual_end_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tvDeadlineDisplay"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDeadlineDisplay"
+        app:layout_constraintVertical_bias="0.036">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPriority"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/priority_hint"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnCreateTodo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/usual_end_margin"
+        android:layout_marginLeft="@dimen/usual_end_margin"
+        android:layout_marginTop="@dimen/usual_end_margin"
+        android:layout_marginEnd="@dimen/usual_end_margin"
+        android:layout_marginRight="@dimen/usual_end_margin"
+        android:layout_marginBottom="@dimen/usual_end_margin"
+        android:text="@string/create_todo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout5"
+        app:layout_constraintVertical_bias="0.402" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

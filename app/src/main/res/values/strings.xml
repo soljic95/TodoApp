@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">SampleTODOApp</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_account_text_display">You dont have an account, please create one</string>
+    <string name="ime">Name</string>
+    <string name="prezime">Surname</string>
+    <string name="date_of_birth">Date of birth</string>
+    <string name="create_account">Create Account</string>
+    <string name="create_todo_title">Create TODO</string>
+    <string name="todo_list_fragment_title">SampleApp</string>
+    <string name="priority">Priority: %d</string>
+    <string name="set_deadline">set deadline</string>
+    <string name="todo_deadline">ToDo deadline not set</string>
+    <string name="todo_details">Todo details</string>
+    <string name="headline">Headline</string>
+    <string name="create_todo">Create ToDo</string>
+    <string name="loading">Loading...</string>
+    <string name="deadline_set_text">Deadline set at: %s</string>
+    <string name="dot">.</string>
+    <string name="date_created">Date created at: %s %s</string>
+    <string name="at">at</string>
+    <string name="priority_hint">Priority</string>
+    <string name="birth_day">Birth day is :%d.%d.%d.</string>
+    <string name="headline_error">Please fill headline</string>
+    <string name="details_error">Please fill todo details</string>
+    <string name="priority_error">Please enter priority</string>
+    <string name="empty_string" />
+    <string name="empty_name_error">Name cant be empty</string>
+    <string name="surname_empty_error">Surname cant be empty</string>
+    <string name="empty_date_error">Please choose birth date</string>
+    <string name="underage_toast_warrning">Must be older than 18</string>
+    <string name="simple_date_format_date">dd.MM.yyyy</string>
+</resources>
